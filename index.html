@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"> 
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"> 
+    <script 
+        src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script> 
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" 
+        data-border-radius="small"></script>
+</head>
+<body class="font-[Inter] bg--gray-50">
+
+    <!-- Navigation Bar Starts -->
+    
+    <nav class="fixed top-0 w-full bg-white shadow-sm z-50">
+        <div class="container max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <img src="images/logo.png" alt="logo" class="h-8 w-auto">
+                </div>
+                <div class="hidden md:flex items-center space-x-8" id="menu-bar">
+                    <a href="#home">Home</a>
+                    <a href="#about">About Me</a>
+                    <a href="mailto:yashmpatel1412@gmail.com">Contact Me</a>
+                    <a href="./srs/Yash Patel.pdf">Resume<i class="fas fa-download mr-2"></i></a>
+                </div>
+                <button class="md:hidden hover:text-custom" id="showMenuBar"><i class=" fas fa-bars text-xl"></i></button>
+                <button class="hidden hover:text-custom" id="hideMenuBar"><i class=" fas fa-x text-xl"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Bar Ends -->
+    
+
+    <!-- Home Section Starts -->
+
+    <section id="home" class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="container max-w-8xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="flex-1 md:hidden">
+                    <img src="images/home.png" alt="home">
+                </div>
+                <div class="flex-1">
+                    <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">Hi, I'm Yash Patel <span class="block text-custom mt-2">Python Developer</span></h1>
+                    <p class="text-xl text-gray-600 mb-8">Looking for a best opportunity to start career in a Python development as a fresher.</p>
+                    <div>
+                        <a href="./srs/Yash Patel.pdf"><button class="!rounded-button bg-custom text-white px-6 py-3 font-medium hover:bg-custom/80"><i class="fas fa-download mr-2"></i>Download Resume</button></a>
+                        <button onclick="window.location.href='mailto:yashmpatel1412@gmail.com'" class="!rounded-button border-2 border-custom text-custom px-6 py-3 font-medium hover:bg-custom/10"><i class="fas fa-envelope mr-2"></i>Contact Me</button>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <img src="images/home.png" alt="home" class="w-full hidden md:block max-w-lg mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home Section Ends -->
+
+    <!-- About Section Starts -->
+
+    <section id="about" class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="container max-w-8xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="flex-1">
+                    <img src="images/about.jpg" alt="about" class="rounded-lg shadow-lg w-full max-w-md mx-auto">
+                </div>
+                <div class="flex-1">
+                    <p class="text-lg text-grey-600 mb-6">I'm an undergraduate student, pursuing Bachelor of Technology in the field of Computer Engineering from Aditya Silver Oak Institute of Technology(ASOIT) with Silver Oak University (SOU). My interest become deeper in computer sinces, I have been using my Sister's laptop and day by day my interest becomes my passion and started studing of computer after compeletion of my SSC and took admission in Diploma, Computer Engineering, where I have been learning different languages and technologies such Python, Java, HTML, CSS, Cloud Computing, AWS, MySQL, and many more.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-custom"></i><span class="text-grey-600">Ahmedabad, GJ, IN-382480</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-briefcase text-custom"></i><span class="text-grey-600">Availabe for Full-time/Part-time work</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-graduation-cap text-custom"></i><span class="text-grey-600">Computer Engineer, SOU (Undergraduate)</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-code text-custom"></i><span class="text-grey-600">Fresher with 2-months virtual Internship</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <i class="fab fa-python text-4xl text-custom"></i>
+                        <i class="fab fa-java text-4xl text-custom"></i>
+                        <i class="fab fa-html5 text-4xl text-custom"></i>
+                        <i class="fab fa-css3-alt text-4xl text-custom"></i>
+                        <i class="fa fa-database text-4xl text-custom"></i>
+                        <i class="fas fa-cloud text-4xl text-custom"></i>
+                        <i class="fab fa-aws text-4xl text-custom"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section Ends -->
+
+    <script src="script.js"></script>
+</body>
+</html>
